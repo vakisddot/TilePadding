@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilePadding", "TilePadding.csproj", "{7DD24A9D-BE39-4483-AC19-9446BA8A3E2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DD24A9D-BE39-4483-AC19-9446BA8A3E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD24A9D-BE39-4483-AC19-9446BA8A3E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD24A9D-BE39-4483-AC19-9446BA8A3E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD24A9D-BE39-4483-AC19-9446BA8A3E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3D2C428-5F19-409A-BB96-96E7160BED74}
+	EndGlobalSection
+EndGlobal
