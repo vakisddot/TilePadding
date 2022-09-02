@@ -25,8 +25,8 @@ namespace TilePadding
             paddingSize = Int32.Parse(Console.ReadLine());
 
 
-            newTilesetWidth = imgImport.Width + imgImport.Width / tileSize * paddingSize;
-            newTilesetHeight = imgImport.Height + imgImport.Height / tileSize * paddingSize;
+            newTilesetWidth = imgImport.Width + imgImport.Width / tileSize * paddingSize - paddingSize;
+            newTilesetHeight = imgImport.Height + imgImport.Height / tileSize * paddingSize - paddingSize;
 
             imgExport = new Bitmap(newTilesetWidth, newTilesetHeight);
             
@@ -36,11 +36,11 @@ namespace TilePadding
 
             for (int y = 0; y < newTilesetHeight; y++)
             {
-                if (currentY % tileSize == 0)
+                if (currentY % tileSize == 0 && currentY != 0)
                     y += paddingSize;
                 for (int x = 0; x < newTilesetWidth; x++)
                 {
-                    if (currentX % tileSize == 0)
+                    if (currentX % tileSize == 0 && currentX != 0)
                         x += paddingSize;
                     Color pixelColor = imgImport.GetPixel(currentX, currentY);
                     imgExport.SetPixel(x, y, pixelColor);
